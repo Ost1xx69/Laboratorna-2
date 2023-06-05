@@ -1,6 +1,24 @@
-. git clone https://github.com/Ost1xx69/Laboratorna-2.git
-. git log 
-327d0d6fe12c2e77b2dac0c1862101b7f243009c
-- git branch new-branch
-- git checkout new-branch
-Laboratorna-2 : зміни не відображаються у файлі README.md.
+Передати числа як аргументи командного рядка:
+V
+python find_pairs.py 1 2 3 4 5 5 6 7
+Ви отримаєте наступний результат:
+3 + 7
+4 + 6
+5 + 5
+апустити скрипт і ввести числа вручну:
+python find_pairs.py
+1
+2
+3
+4
+5
+5
+6
+7
+Ви отримаєте наступний результат:
+3 + 7
+4 + 6
+5 + 5
+Якщо числа збережені у файлі numbers.txt, то їх можна передати у скрипт таким чином: 
+python find_pairs.py $(cat numbers.txt)
+Цей спосіб передає числа з файлу numbers.txt як аргументи командного рядка скрипту. Результат буде таким самим, як і у попередніх прикладах.
