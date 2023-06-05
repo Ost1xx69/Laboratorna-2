@@ -1,6 +1,12 @@
-Я змінив файл README.md, додавши повідомлення про те, що я використовував команду git clone для клонування репозиторію.
-Я переглянув логи першого коміту за допомогою команди LOG
-Я створив нову гілку з назвою new-branch та перейшов на неї за допомогою команд:
-- git branch new-branch
-- git checkout new-branch
-Перейшов на гілку master та перевірив, що зміни, зроблені в гілці new-branch, не відображаються у файлі README.md. Це тому, що зміни були зроблені в іншій гілці, і зараз ми перебуваємо в гілці master. Я додав новий запис у файл README.md, пояснивши це:
+def find_pairs(numbers):
+    pairs = []
+    for i in range(len(numbers)):
+        for j in range(i+1, len(numbers)):
+            if numbers[i] + numbers[j] == 10:
+                pairs.append((numbers[i], numbers[j]))
+    return pairs
+
+numbers = [1, 2, 3, 4, 5, 5, 6, 7]
+pairs = find_pairs(numbers)
+for pair in pairs:
+    print(f"{pair[0]} + {pair[1]}")
